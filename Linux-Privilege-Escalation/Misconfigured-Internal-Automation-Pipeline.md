@@ -115,7 +115,7 @@ ls
 ```
 
 The important discovery was that the `incoming` directory could be used to place a script for the internal automation pipeline to process.
-![[Pasted image 20260911123720.png]]
+![ops_user shell](Screenshots/ftp.png)
 
 ---
 
@@ -155,7 +155,7 @@ cat test.sh
 ```
 
 The payload works by creating a Bash reverse shell from the target back to the AttackBox.
-![[Pasted image 20260911123555.png]]
+![ops_user shell](Screenshots/test.png)
 
 ---
 
@@ -172,7 +172,7 @@ The listener waited for the target to connect back to:
 ```text
 10.48.64.227:5555
 ```
-![[Pasted image 20260911123524.png]]
+![ops_user shell](Screenshots/nc.png)
 
 ---
 
@@ -205,7 +205,7 @@ ls
 The internal automation pipeline processed the uploaded script.
 
 Because the script contained the reverse-shell payload, it connected back to my listener.
-![[Pasted image 20260911124431.png]]
+![ops_user shell](Screenshots/ftp2.png)
 
 ---
 
@@ -244,7 +244,7 @@ cat /home/recon_user/flag.txt
 ### Flag 1
 
 The output of the command above is the flag for the `recon_user` stage.
-![[Pasted image 20260911124640.png]]
+![ops_user shell](Screenshots/recon.png)
 
 ---
 
@@ -307,7 +307,7 @@ Code executes as dev_user
     ↓
 dev_user shell
 ```
-![[Pasted image 20260911125009.png]]
+![ops_user shell](Screenshots/backup.png)
 
 ---
 
@@ -373,7 +373,7 @@ The result showed:
 ```text
 dev_user
 ```
-![[Pasted image 20260911125547.png]]
+![ops_user shell](Screenshots/dev.png)
 
 ---
 
@@ -442,7 +442,7 @@ ls -la /opt/dev/bin
 ```
 
 I verified that I could work with the directory.
-![[Pasted image 20260911130230.png]]
+![ops_user shell](Screenshots/bin.png)
 
 ---
 
@@ -485,7 +485,7 @@ ls -la /opt/dev/bin/ps
 ```
 
 The file now had executable permissions.
-![[Pasted image 20260911130436.png]]
+![ops_user shell](Screenshots/ps.png)
 
 ---
 
@@ -552,7 +552,7 @@ cat /home/monitor_user/flag.txt
 ### Flag 3
 
 The output of the command above is the `monitor_user` flag.
-![[Pasted image 20260911130917.png]]
+![ops_user shell](Screenshots/monitor.png)
 
 ---
 
@@ -636,7 +636,7 @@ Therefore, the actual helper being executed was:
 ```text
 /opt/app/deploy_helper.sh
 ```
-![[Pasted image 20260911131323.png]]
+![ops_user shell](Screenshots/dep.png)
 
 ---
 
@@ -737,7 +737,7 @@ The shell connected back to:
 ```text
 10.48.64.227:5558
 ```
-![[Pasted image 20260911132702.png]]
+![ops_user shell](Screenshots/deploy.png)
 
 ---
 
@@ -776,7 +776,8 @@ cat /home/ops_user/flag.txt
 ### Flag 4
 
 The output of the command above is the `ops_user` flag.
-![[Pasted image 20260911133104.png]]![[Pasted image 20260911133151.png]]
+![ops_user shell](Screenshots/ops.png)
+![ops_user shell](Screenshots/flag.png)
 ---
 
 # 23. ops_user → root
@@ -857,7 +858,7 @@ THM{2b8e6c4a-1d55-4f90-a3c7-5e9d1b7f6a22}
 ```
 
 This completed the lab.
-![[Pasted image 20260911142317.png]]
+![ops_user shell](Screenshots/root.png)
 
 ---
 
